@@ -1,10 +1,7 @@
 <app-navbar></app-navbar>
 
-<div class="container">
-  <app-hero [socialLinks]="socialLinks"></app-hero>
-  <app-about [personalInfo]="personalInfo"></app-about>
-  <app-skills [skills]="skills"></app-skills>
-  <app-experience [experience]="experience" [education]="education"></app-experience>
+<div class="container" style="min-height: 85vh;">
+  <router-outlet></router-outlet>
 </div>
 
 <app-footer [socialLinks]="socialLinks"></app-footer>

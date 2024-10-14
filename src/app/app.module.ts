@@ -9,6 +9,10 @@ import { AboutComponent } from './components/about/about.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SkillsPageComponent } from './components/skills-page/skills-page.component';
+import { ContactPageComponent } from './components/contact-page/contact-page.component';
+import { HomeComponent } from './components/home/home.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -18,10 +22,14 @@ import { FooterComponent } from './components/footer/footer.component';
     AboutComponent,
     SkillsComponent,
     ExperienceComponent,
-    FooterComponent
+    FooterComponent,
+    SkillsPageComponent,
+    ContactPageComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     NgbModule
   ],
   providers: [],
