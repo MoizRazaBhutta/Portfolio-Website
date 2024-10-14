@@ -3,7 +3,8 @@ export interface PersonalInfo{
     age:number,
     email:string,
     phone:string,
-    address:string
+    address:string,
+    description: string
 }
 
 export interface SocialLink{
@@ -28,4 +29,12 @@ export interface Education{
     degree:string,
     school:string,
     year:string
+}
+
+export interface ViewData{
+    personalInfo:PersonalInfo,
+    socialLinks:SocialLink,
+    skills:Skill[],
+    experience:Experience[],
+    education:Education[]
 }

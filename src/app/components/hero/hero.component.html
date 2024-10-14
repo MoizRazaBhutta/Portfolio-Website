@@ -1,1 +1,18 @@
-<p>hero works!</p>
+<div class="hero text-center my-5">
+    <h1>{{ name }}</h1>
+    <a href="mailto:moiz_bhutta@hotmail.com" class="btn btn-primary">Hire Me</a>
+    <div class="social-links">
+      <a [href]="socialLinks.linkedin" target="_blank" class="btn btn-outline-dark mx-2">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a [href]="socialLinks.github" target="_blank" class="btn btn-outline-dark mx-2">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a [href]="socialLinks.facebook" target="_blank" class="btn btn-outline-dark mx-2">
+        <i class="fab fa-facebook"></i> Facebook
+      </a>
+      <a [href]="socialLinks.instagram" target="_blank" class="btn btn-outline-dark mx-2">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+    </div>
+  </div>

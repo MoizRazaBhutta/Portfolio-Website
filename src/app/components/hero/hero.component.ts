@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { SocialLink } from 'src/app/models/interfaces';
 
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.component.html',
   styleUrls: ['./hero.component.scss']
 })
-export class HeroComponent implements OnInit {
+export class HeroComponent {
 
-  constructor() { }
+  @Input() socialLinks!:SocialLink;
 
-  ngOnInit(): void {
-  }
-
+  name:string = "Abdul Moiz Raza Bhutta";
 }
